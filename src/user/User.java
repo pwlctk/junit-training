@@ -1,4 +1,4 @@
-package pl.com.pw.user;
+package user;
 
 
 public class User implements Updatable {

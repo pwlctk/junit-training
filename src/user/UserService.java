@@ -1,17 +1,13 @@
-package pl.com.pw.user;
+package user;
 
 import com.sun.rowset.JdbcRowSetImpl;
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-
 public class UserService {
-
 	static final ResultSet EMPTY_SET = new JdbcRowSetImpl();
-
 	private Connection sqlConnection;
 
 	public UserService(Connection sqlConnection) {
@@ -37,5 +33,4 @@ public class UserService {
 			throw e;
 		}
 	}
-
 }
